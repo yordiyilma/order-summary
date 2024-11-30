@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   font-family: 'red Hat Display', sans-serif;
+}
+body{
+min-height: 100vh;
+background-image: url(images/pattern-background-desktop.svg);    
+background-repeat: no-repeat;
+background-size: contain;
+position: relative;
+background-color: var(--Very-pale-blue);
+font-size: 16px;
+
+}
+.container{
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+max-width: 450px;
+background-color: white;
+border-radius: 20PX;
+overflow: hidden;
+}
+.text-content{
+    padding: 7%;
+    text-align: center;
+}
+.title{
+color: var(--Dark-blue);
+font-weight: 900;
+font-size: 32px;
+margin-bottom: 20px;
+}
+.text-content p.subtitle{
+    color: var(--Desaturated-blue);
+    width: 350px;
+   padding-left: 20px;
+   margin-bottom: 25px;
+}
+.plain-box{
+   background-color: var(--Very-pale-blue);
+   border-radius: 12px;
+   display: flex;
+   padding: 25px;
+   align-items: center;
+   justify-content: space-between;
+}
+.plain-box-left{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.plain-box-left div{
+    margin-left: 20px;
+}
+.plain-box-left div h5{
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--Dark-blue);
+}
+.plain-box-left div p{
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--Desaturated-blue);
+}
+.plain-box a{
+    font-weight: 700;
+    color: var(--Bright-blue);
+    cursor: pointer;
+}
+.plain-box a:hover{
+text-decoration: none;
+color: var(--Desaturated-blue);
+}
+.proceed-btn{
+    background-color: var(--Bright-blue);
+    padding: 12px 125px 12px 125px;
+    border-radius: 10px;
+    color: var(--Very-pale-blue);
+    font-weight: 700;
+    font-size: 13px;
+    border-style: none;
+    box-shadow:  0 16px 16px hsla(240, 24%, 75%, 0.7);
+    margin: 30px 0;
+    cursor: pointer;
+}
+.proceed-btn:hover{
+    background-color: var(--Bright-blue);
+    opacity: 0.7;
+    box-shadow:  0 16px 16px rgba(200, 200, 226, 0.7);
+
+}
+.cancel-btn{
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
+}
+.cancel-btn:hover{
+    color: var(--Dark-blue);
+}
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
